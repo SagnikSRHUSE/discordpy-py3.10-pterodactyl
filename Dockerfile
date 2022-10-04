@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get autoclean \
     && apt-get -y install dirmngr curl software-properties-common locales git cmake \
-    && apt-get -y install ffmpeg
+    && apt-get -y install ffmpeg python3-tk
 
     # Ensure UTF-8
 RUN sed -i 's/^# *\(en_US.UTF-8\)/\1/' /etc/locale.gen \
